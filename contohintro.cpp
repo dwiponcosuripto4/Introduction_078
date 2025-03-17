@@ -1,39 +1,34 @@
 #include <iostream>
 using namespace std;
 
-// numeric nPanjang, nLebar, nLuas
-float Panjang, Lebar, Luas;
+float Panjang, Lebar;
+
 void InputData()
 {
-    // display ""Masukkan Panjang"
+    // Meminta input Panjang
     cout << "Masukkan Panjang : ";
-    // accept nPanjang
     cin >> Panjang;
-    // display ""Masukkan Lebar"
+
+    // Meminta input Lebar
     cout << "Masukkan Lebar : ";
-    // accept nLebar
     cin >> Lebar;
-    // compute nLuas = nPanjang * nLebar
-
-    // display "Luas Persegi Panjang : " + nLuas
-
-    // end
 }
 
 float HitungLuas()
 {
-    // compute nLuas = nPanjang * nLebar
+    // Menghitung luas dan langsung mengembalikannya
     return Panjang * Lebar;
 }
 
 void OutputData()
 {
-    // display "Luas Persegi Panjang : " + nLuas
+    // Menampilkan hasil perhitungan luas
     cout << "Luas Persegi Panjang : " << HitungLuas();
 }
 
 int main()
 {
+    // Menjalankan fungsi untuk input data, menghitung, dan output data
     InputData();
     OutputData();
 }
